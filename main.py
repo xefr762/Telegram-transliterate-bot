@@ -18,8 +18,8 @@ logging.basicConfig(
 async def start(message: Message):
     user_name = message.from_user.full_name
     user_id = message.from_user.id
-    text = f"Hello, {user_name}! Nice to see you here! Enter the name you want to transliterate"
-    logging.info(f'{user_name}, {user_id} -- запустил бота')
+    text = f"Hello, {user_name}! Nice to see you here! Enter the name or some strings you want to transliterate"
+    logging.info(f'{user_name}, {user_id} -- start using bot')
     await bot.send_message(chat_id=user_id, text=text)
 
 #Транслитерация
@@ -41,7 +41,7 @@ async def send_mess(message: Message):
     user_name = message.from_user.full_name
     user_id = message.from_user.id
     text = message.text
-    logging.info(f'{user_name} {user_id}: написал сообщение {text}')
+    logging.info(f'{user_name} {user_id} - writed a message - {text}')
     await message.answer(text=translate(text))
 
 if __name__ == '__main__':
