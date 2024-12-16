@@ -1,6 +1,5 @@
 # Telegram transliterate bot with Docker
 ## Описание
-A telegram bot, which accepts the cyrillic alphabet and translates it into the litinic alphabet
 Телеграм бот, который принимает на вход сообщение на кириллице в сообщение на латинице. 
 Основная задача перевод ФИО в соотетствии с [Приказом МИД России от 12.02.2020 № 2113](https://www.consultant.ru/document/cons_doc_LAW_360580/9eb761ae644ec1e283b3a50ef232330b924577cb/).
 
